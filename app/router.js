@@ -7,7 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('friends');
+  this.route('friends', function() {
+    this.route('view', {path: 'view/:id'});
+  });
 });
 
 export default Router;

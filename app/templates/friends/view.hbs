@@ -1,0 +1,13 @@
+ <h1>Detalhes do Amigo</h1>
+ 
+ {{#each model as |friend|}}
+           
+    <p>{{ friend.name }}</p>
+    <p>{{ friend.lastname }}</p>
+    <p>{{ friend.friendsSince }}</p>
+    
+            
+{{/each}}
+{{#link-to "friends" }} 
+    Voltar
+{{/link-to}}
