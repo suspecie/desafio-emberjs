@@ -3,9 +3,9 @@ import Route from '@ember/routing/route';
 export default Route.extend({
     actions: {
         save (model) {
-            //let newPost = this.store.createRecord('post', model); //criei o registro
-            //newPost.save(); //persistindo os dados
-            // this.transitionTo('posts');
+            let newFriend = this.store.createRecord('friend', model); //criei o registro
+            newFriend.save(); //persistindo os dados
+           // this.transitionTo('friends');
         }
     },
     model () {
