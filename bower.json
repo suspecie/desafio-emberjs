@@ -1,0 +1,6 @@
+{
+  "name": "desafio-emberjs",
+  "dependencies": {
+    "bootstrap-datepicker": "^1.7.1"
+  }
+}
