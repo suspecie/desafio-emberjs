@@ -1,5 +1,13 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div id="wrapper">
+    <header id="header">
+        <a href="/" class="logo">Minha Lista de Amigos</a>
+    </header>
+    <main>
+        <section id="content"> 
+            {{ outlet }}
+        </section>
+    </main>
+</div>
+<footer id="footer">
+    developed by @suspecie
+</footer>

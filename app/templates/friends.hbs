@@ -1,0 +1,21 @@
+<h1>Meus Amigos</h1>
+<p>Gerenciamento de amigos</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Data de Início da Amizade</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each model as |friend|}}
+            <tr>
+                <td>{{ friend.name }}</td>
+                <td>{{ friend.lastname }}</td>
+                <td>{{ friend.friendsSince }}</td>
+            </tr>
+          {{/each}}
+    </tbody>
+</table>
